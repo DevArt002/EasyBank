@@ -1,6 +1,12 @@
 /*
 * Nav 
 */
+header {
+    position: relative;
+    z-index: 1;
+    background: white;
+}
+
 .nav-body {
     align-items: center;
     padding-top: 0.8rem;
@@ -46,12 +52,10 @@
 */
 .landing {
     background-color: var(--very-light-gray-blue);
-    background-image: url("../images/bg-intro-desktop.svg");
     background-position-x: right;
     background-repeat: no-repeat;
     background-size: 60%;
     position: relative;
-    height: 100vh;
 }
 
 .landing .container {
@@ -76,14 +80,20 @@
     line-height: 2rem;
 }
 
-.landing__graphic {
+.landing__graphic_1 img {
+    height: 100%;
+}
+
+.landing__graphic_2 {
     position: absolute;
     right: 0;
     width: 40%;
     overflow: hidden;
+    top: 50%;
+    transform: translate(0px, -50%);
 }
 
-.landing__graphic img {
+.landing__graphic_2 img {
     width: 120%;
 }
 
